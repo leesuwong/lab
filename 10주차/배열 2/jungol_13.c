@@ -1,14 +1,19 @@
-// 570: 배열2 - 자가진단7
-// https://jungol.co.kr/problem/570
 #include <stdio.h>
 
-int main(void) {
+int main()
+{
     int a[5][5];
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
             if (i == 0 || j == 0) a[i][j] = 1;
             else a[i][j] = a[i - 1][j] + a[i][j - 1];
-            printf("%d%c", a[i][j], j == 4 ? '\n' : ' ');
+            {
+            printf("%d", a[i][j]);
+            if (j == 4)
+                printf("\n");
+            else
+                printf(" ");
+        }
         }
     }
     return 0;

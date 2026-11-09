@@ -1,8 +1,7 @@
-// 9078: 배열2 - 연습문제5
-// https://jungol.co.kr/problem/9078
 #include <stdio.h>
 
-int main(void) {
+int main()
+{
     int a[3][3], b[3][3], sum[3][3];
     for (int i = 0; i < 3; i++) {
         printf("첫 번째 배열 %d행 ", i + 1);
@@ -17,7 +16,13 @@ int main(void) {
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             sum[i][j] = a[i][j] + b[i][j];
-            printf("%d%c", sum[i][j], j == 2 ? '\n' : ' ');
+            {
+            printf("%d", sum[i][j]);
+            if (j == 2)
+                printf("\n");
+            else
+                printf(" ");
+        }
         }
     }
     return 0;

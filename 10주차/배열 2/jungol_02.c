@@ -1,8 +1,7 @@
-// 9075: 배열2 - 연습문제2
-// https://jungol.co.kr/problem/9075
 #include <stdio.h>
 
-int main(void) {
+int main()
+{
     int count[10] = {0}, n;
     while (scanf("%d", &n) == 1 && n != 0) {
         int digit = n % 10;

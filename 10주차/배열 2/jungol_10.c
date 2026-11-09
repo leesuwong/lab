@@ -1,8 +1,7 @@
-// 9079: 배열2 - 연습문제6
-// https://jungol.co.kr/problem/9079
 #include <stdio.h>
 
-int main(void) {
+int main()
+{
     int score[4][4] = {0};
     for (int i = 0; i < 3; i++) {
         printf("%d번째 학생의 점수 ", i + 1);

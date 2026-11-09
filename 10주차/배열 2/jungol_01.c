@@ -1,8 +1,7 @@
-// 564: 배열2 - 자가진단1
-// https://jungol.co.kr/problem/564
 #include <stdio.h>
 
-int main(void) {
+int main()
+{
     int count[26] = {0};
     char ch;
     while (scanf(" %c", &ch) == 1 && ch >= 'A' && ch <= 'Z')

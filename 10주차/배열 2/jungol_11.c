@@ -1,8 +1,7 @@
-// 569: 배열2 - 자가진단6
-// https://jungol.co.kr/problem/569
 #include <stdio.h>
 
-int main(void) {
+int main()
+{
     int score[5][4], passed = 0;
     for (int i = 0; i < 5; i++)
         for (int j = 0; j < 4; j++)

@@ -1,8 +1,7 @@
-// 164: 배열2 - 형성평가5
-// https://jungol.co.kr/problem/164
 #include <stdio.h>
 
-int main(void) {
+int main()
+{
     int a[4][3];
     for (int i = 0; i < 4; i++) {
         printf("%dclass? ", i + 1);

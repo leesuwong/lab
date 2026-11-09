@@ -1,8 +1,7 @@
-// 165: 배열2 - 형성평가6
-// https://jungol.co.kr/problem/165
 #include <stdio.h>
 
-int main(void) {
+int main()
+{
     int a[5][7] = {0};
     a[0][1] = a[0][3] = a[0][5] = 1;
     for (int i = 1; i < 5; i++)
@@ -10,6 +9,12 @@ int main(void) {
             a[i][j] = a[i - 1][j - 1] + a[i - 1][j + 1];
     for (int i = 0; i < 5; i++)
         for (int j = 1; j <= 5; j++)
-            printf("%d%c", a[i][j], j == 5 ? '\n' : ' ');
+            {
+            printf("%d", a[i][j]);
+            if (j == 5)
+                printf("\n");
+            else
+                printf(" ");
+        }
     return 0;
 }
