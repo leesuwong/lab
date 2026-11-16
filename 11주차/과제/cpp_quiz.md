@@ -1,0 +1,133 @@
+## 1번
+
+다음 코드의 출력 결과는?
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    char str[] = "apple";
+    str[1] = 'n';
+    printf("%s", str);
+    return 0;
+}
+```
+
+① apple
+
+② anple
+
+③ npple
+
+④ apnle
+
+## 2번
+
+다음 코드의 출력 결과는?
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    char str[20] = "Hello";
+    strcpy(str, "Hi");
+    printf("%d", (int)strlen(str));
+    return 0;
+}
+```
+
+① 20
+
+② 5
+
+③ 3
+
+④ 2
+
+## 3번
+
+다음 코드의 출력 결과는?
+
+```c
+#include <stdio.h>
+
+struct Student {
+    int score;
+};
+
+int main(void) {
+    struct Student a = {80};
+    struct Student b = a;
+    b.score = 95;
+    printf("%d %d", a.score, b.score);
+    return 0;
+}
+```
+
+① 80 95
+
+② 95 95
+
+③ 80 80
+
+④ 95 80
+
+## 4번
+
+다음 코드의 출력 결과는?
+
+```c
+#include <stdio.h>
+
+struct Student {
+    int score;
+};
+
+int main(void) {
+    struct Student s = {70};
+    struct Student *p = &s;
+    p->score += 10;
+    printf("%d", s.score);
+    return 0;
+}
+```
+
+① 10
+
+② 70
+
+③ 80
+
+④ 0
+
+## 5번
+
+다음 코드의 출력 결과는?
+
+```c
+#include <stdio.h>
+
+struct Student {
+    int score;
+};
+
+void change(struct Student s) {
+    s.score = 100;
+}
+
+int main(void) {
+    struct Student s = {60};
+    change(s);
+    printf("%d", s.score);
+    return 0;
+}
+```
+
+① 100
+
+② 60
+
+③ 0
+
+④ 오류 발생
