@@ -1,8 +1,7 @@
-## 1번
+1번
 
 다음 코드의 출력 결과는?
 
-```c
 #include <stdio.h>
 
 int main(void) {
@@ -11,7 +10,6 @@ int main(void) {
     printf("%s", str);
     return 0;
 }
-```
 
 ① apple
 
@@ -21,11 +19,10 @@ int main(void) {
 
 ④ apnle
 
-## 2번
+2번
 
 다음 코드의 출력 결과는?
 
-```c
 #include <stdio.h>
 #include <string.h>
 
@@ -35,7 +32,6 @@ int main(void) {
     printf("%d", (int)strlen(str));
     return 0;
 }
-```
 
 ① 20
 
@@ -45,11 +41,10 @@ int main(void) {
 
 ④ 2
 
-## 3번
+3번
 
 다음 코드의 출력 결과는?
 
-```c
 #include <stdio.h>
 
 struct Student {
@@ -63,7 +58,6 @@ int main(void) {
     printf("%d %d", a.score, b.score);
     return 0;
 }
-```
 
 ① 80 95
 
@@ -73,11 +67,10 @@ int main(void) {
 
 ④ 95 80
 
-## 4번
+4번
 
 다음 코드의 출력 결과는?
 
-```c
 #include <stdio.h>
 
 struct Student {
@@ -91,7 +84,6 @@ int main(void) {
     printf("%d", s.score);
     return 0;
 }
-```
 
 ① 10
 
@@ -101,11 +93,10 @@ int main(void) {
 
 ④ 0
 
-## 5번
+5번
 
 다음 코드의 출력 결과는?
 
-```c
 #include <stdio.h>
 
 struct Student {
@@ -122,7 +113,6 @@ int main(void) {
     printf("%d", s.score);
     return 0;
 }
-```
 
 ① 100
 
@@ -132,7 +122,7 @@ int main(void) {
 
 ④ 오류 발생
 
-## 정답
+정답
 
 1번: ②
 
